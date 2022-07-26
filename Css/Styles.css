@@ -1,0 +1,397 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:visited{
+    color: black
+}
+
+a{
+    text-decoration: none;
+    text-decoration: solid;
+}
+
+h1{
+    display: inline;
+    align-items: center;
+   
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+}
+
+input:hover{
+    box-shadow: 2px 2px 2px pink;
+}
+input{
+    color: black;
+    text-decoration:solid;
+    text-align: center;   
+}
+
+.fondo{
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);        
+}
+
+.photoCenterUno{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photoCenterDos{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photoCenterTres{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.photoCenterCuatro{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#colorTitulo{
+    color: black;
+    font-style: normal;
+    text-shadow: 2px 2px 2px white;
+}
+
+#estudioImage,
+#map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+header,footer{
+    display: flex;
+    align-items: center ;
+}
+
+header{
+    grid-area: header;
+    justify-content: space-between;   
+}
+
+nav{
+    grid-area: nav;
+    justify-content: center;  
+    align-items: center;
+    
+}
+
+footer{
+    grid-area: footer;
+    justify-content: center;
+    margin: 5px;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+@media screen and (min-width:960px){
+    a{
+        font-size: 40px;
+    }
+ 
+    .header>img{
+        width: 230px;
+        height: 230px;
+        display: inline;
+        text-align:unset;
+    
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    
+    h2{
+        font-size: 50px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;  
+        font-size: 30px; 
+        }
+    li{
+        display: inline-block;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    legend{
+        text-align: center;
+        text-decoration: solid;
+        font-size: larger ;
+    }
+    label,
+    input{
+        color: black;
+        font-size: 30px;;
+        text-decoration:solid;
+        text-shadow: 2px 2px 2px white; 
+        text-align: center;   
+    }
+    
+    p{
+        font-size: 20px;
+        padding: 1%;
+    }
+    
+    ol{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    input,
+    textarea{
+        opacity:0.6;
+        border: 2px 2px 2px, solid, black;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 2px white;
+        box-sizing:initial;
+        font-size: large;
+        align-items: center;
+        
+    }
+    article{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        display:inline-block;
+        justify-content: center;
+    }
+    
+    .videoPlayer{
+        height: 400px;
+    }
+    
+    .photoCenterUno{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .gallery{
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+    }
+    
+    .photoCenterDos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .photoCenterTres{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .photoCenterCuatro{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .galleryM{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    #instagram{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .tips{
+        display: grid;
+        grid-template-columns: auto, auto;
+        grid-template-rows: auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: "section section";
+        align-items:center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    #estudioImage,
+    #map{
+        width: 50%;
+    }
+    
+    textarea{
+        width: 500px;
+        height: 200px;
+    }
+}
+    
+@media screen and (min-width:320px) and (max-width:959px){
+        .header>img{
+            width: 90px;
+            height: 90px;
+            justify-content: start;
+            margin-left: 0%;
+            
+        }
+       
+        a{
+            font-size: 20px;
+        }
+        
+        h1{
+            justify-content: center;
+            font-size: 25px;
+        }
+        
+        h2{
+            font-size: 20px;
+        }
+        
+        h3{
+            font-size: 15px;
+            text-decoration: underline;
+        }
+        
+        ul,
+        li{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;  
+            font-size: 15px; 
+            padding: 0%;
+            }
+        
+        legend{
+            text-align: center;
+            text-decoration: solid;
+            font-size: larger ;
+        }
+
+        label,
+        input{
+            font-size: 10px;;
+            text-shadow: 2px 2px 2px white;  
+        }
+        
+        p{
+            column-count: 1;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        ol{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+        
+        input,
+        textarea{
+            opacity:0.6;
+            border: 2px 2px 2px, solid, black;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 2px white;
+            box-sizing:initial;
+            font-size: large;
+            align-items: center;
+        }
+        article{
+            display: inline;
+            justify-content: center;
+            text-align: center;
+        }
+        img{
+            display:inline-block;
+            justify-content: center;
+        }
+        
+        .videoPlayer{
+            height: 270px;
+        }
+        
+        .photoCenterUno{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .gallery{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    
+        }
+        .galleryM{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        .photoCenterDos{
+            display: grid;
+            grid-template-columns: auto auto;
+    
+        }
+        .photoCenterTres{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-auto-rows: 150px;
+        }
+        .photoCenterCuatro{
+            width: 200px;
+            height: 200px;
+        }
+
+        #instagram{
+            width: 50px;
+            height: 50px;
+        }
+        
+        #formulario{
+            justify-content: center;
+            align-items: center;
+            size-adjust: 50%;
+        }
+        
+        #estudioImage,
+        #map{
+            width: 250px;
+            height: 250px;
+        }
+        
+}

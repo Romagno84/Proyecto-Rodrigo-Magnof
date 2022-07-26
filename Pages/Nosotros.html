@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M V Studio | Nosotras</title>
-    <link rel="stylesheet" href="../Styles.css">
+    <link rel="stylesheet" href="../Css/Styles.css">
 </head>
 <body class="fondo">
 <div id="main">
-    <header>
-        <img src="../Media/LOGO.png" width="200" height="200" alt="">
+    <header class="header">
+        <img src="../Media/LOGO.png" alt="">
         <h1>M V Studio | Content Creator</h1>
-        <img src="../Media/LOGO.png" width="200" height="200" alt="">
+        <img src="../Media/LOGO.png"  alt="">
     </header>
    <nav>
         <ul >
@@ -24,15 +24,17 @@
          <li> <a href="../Pages/Contacto.html" target=""> Contacto</a></li>
          </ul>
    </nav>
-    <section>
-    <h2>Nosotras</H2>
-        <div class="photoCenter">
-        <img src="../Media/Captura de Pantalla 2022-06-30 a la(s) 09.23.10.png" height="400" width="350" alt=""> 
+    <section class="nosotras">
+    <h2 id="colorTitulo">Nosotras</H2>
+        <div class="photoCenterDos">
         <video class="videoPlayer" src="../Media/WhatsApp Video 2022-07-02 at 10.41.44 AM.mp4" type="video/mp4" autoplay loop muted inline>
         </video>
+        <img class="gallery" src="../Media/Captura de Pantalla 2022-07-22 a la(s) 16.55.00.png"  alt=""> 
+        <img class="gallery" src="../media/Captura de Pantalla 2022-07-22 a la(s) 16.55.58.png" alt="">
         <video class="videoPlayer" src="../Media/WhatsApp Video 2022-07-02 at 10.41.37 AM.mp4" type="video/mp4" autoplay loop muted inline>
         </video>
-        <img src="../media/WhatsApp Image 2022-07-02 at 10.41.34 AM.jpeg" height="400" width="400" alt="">
+        <img class="gallery" src="../Media/Captura de Pantalla 2022-07-22 a la(s) 16.55.38.png" alt="">
+        <img class="gallery" src="../Media/Captura de Pantalla 2022-07-23 a la(s) 13.32.55.png" alt="">
         </div>
         <article>
             <p> Somos fotógrafas creativas y creadoras de contenido. Nos ubicamos en la Ciudad Autónoma de Buenos Aires. Amantes del arte en todas sus formas y colores. Tenemos gran fascinación por crear contenido a través la fotografía publicitaria creativa. 
@@ -74,9 +76,25 @@
             <p> Entonces, no olvides de enviarnos un correo electrónico a info@mv-studio.com.ar.</p>
     </article>
    </section>
+   <aside class="aside">
+    <article>
+        <form action="" method="GET" enctype="multipart/form-data"  ></form>
+        <fieldset>
+        <legend>¿Queres ser el ser el Primero en enterarte de todas Nuestras propuestas y novedades?</legend>
+        <label for="Nombre"></label>
+        <input type="text" placeholder="Nombre" name="Nombre">
+        <label for="Apellido"></label>
+        <input type="text" placeholder="Apellido" name="Apellido" required>
+        <label for="Email"> </label>
+        <input type="text" placeholder= "E-mail"name="Email">
+        <br>
+        <input type="submit" value="Enviar">
+        </fieldset>
+    </article>
+</aside>
    <footer>
-    <a href="https://www.instagram.com/mv.studio__/" target="_blank"><img src="../Media/Instagram.png.webp" alt=""></a>
-</footer>
+    <a href="https://www.instagram.com/mv.studio__/" target="_blank"><img id="instagram" src="../Media/Instagram.png.webp" alt=""></a>
+    </footer>
 </div>
 </body>
 </html>
