@@ -48,6 +48,8 @@ input{
     background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);        
 }
 
+
+
 .photoCenterUno{
     display: flex;
     justify-content: center;
