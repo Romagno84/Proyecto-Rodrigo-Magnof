@@ -73,6 +73,16 @@ input{
     margin-right: auto;
 } 
 
+#carouselExampleIndicators,
+#carouselSlide,
+#carousel-indicators{
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 #colorTitulo{
     color: black;
     font-style: normal;
@@ -111,6 +121,7 @@ footer{
 
 section{
     grid-area: section;
+    
 }
 
 aside{
