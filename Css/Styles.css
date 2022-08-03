@@ -48,8 +48,6 @@ input{
     background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);        
 }
 
-
-
 .photoCenterUno{
     display: flex;
     justify-content: center;
@@ -108,10 +106,14 @@ header{
     justify-content: space-between;   
 }
 
+.carousel{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
 nav{
     grid-area: nav;
-    justify-content: center;  
-    align-items: center;
     
 }
 
@@ -123,6 +125,7 @@ footer{
 
 section{
     grid-area: section;
+    width: 100%;
     
 }
 
@@ -132,7 +135,7 @@ aside{
 
 @media screen and (min-width:960px){
     a{
-        font-size: 40px;
+        font-size: 30px;
     }
  
     .header>img{
@@ -154,6 +157,11 @@ aside{
     h3{
         font-size: 30px;
     }
+
+    h5{
+        font-size: 20px;
+    }
+
     ul{
         display: flex;
         flex-direction: row;
@@ -164,7 +172,7 @@ aside{
     li{
         display: inline-block;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
     }
     
     legend{
@@ -272,6 +280,12 @@ aside{
         width: 500px;
         height: 200px;
     }
+
+    .card{
+        width: 100%;
+        margin: 0 auto;
+    }
+ 
 }
     
 @media screen and (min-width:320px) and (max-width:959px){
@@ -289,7 +303,7 @@ aside{
         
         h1{
             justify-content: center;
-            font-size: 25px;
+            font-size: 15px;
         }
         
         h2{
@@ -306,7 +320,7 @@ aside{
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: center;  
-            font-size: 15px; 
+            font-size: 20px; 
             padding: 0%;
             }
         
@@ -354,6 +368,7 @@ aside{
         img{
             display:inline-block;
             justify-content: center;
+            
         }
         
         .videoPlayer{
@@ -406,5 +421,15 @@ aside{
             width: 250px;
             height: 250px;
         }
+        .carousel{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .card{
+            width: 220%;
+            margin: 0 auto;
+        }
+
         
 }

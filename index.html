@@ -6,25 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M V Studio | Content Creator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/Styles.css">
 </head>
 <body class="fondo">
     <div id="main">
-        <header class="header"> 
-            <img src="Media/LOGO.png" alt=""> 
-            <H1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</H1>
-            <img src="Media/LOGO.png" alt="">
-        </header>
-        <nav class="nav">
-            <ul>
-            <li> <a href="index.html" target="">Home</a></li>
-            <li> <a href="Pages/Nosotros.html" target=""> Nosotras</a></li>
-            <li> <a href="pages/Servicios.html" target=""> Servicios</a></li>
-            <li> <a href="pages/Porfolio.html" target=""> Porfolio </a></li>
-            <li> <a href="pages/Tips.html" target=""> Tips</a></li>
-            <li> <a href="pages/Contacto.html" target=""> Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-light">
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="index.html"><img src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">M V Studio | Content Creator</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Pages/Nosotros.html">Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Pages/Porfolio.html">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/Tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/Contacto.html">Contacto</a>
+                    </li>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav> 
         <section class="section">
             <div class="photoCenterUno">
                 <img class="gallery" src="Media/Captura de Pantalla 2022-06-30 a la(s) 08.58.00.png" alt="">   
@@ -41,14 +68,31 @@
                 A todos ellos rendimos un activo homenaje: desde nuestra boutique creativa, trabajamos para nutrir sus ideas y sueños, con el fin de llegar 
                 al medio al que pertenece, ampliando su capacidad de negocios, a los medios, y por último eslabón de esta cadena: el gran público, el consumidor final.</p>
             </article> 
-            <div class="photoCenterUno">
-                <img class="gallery"src="Media/Captura de Pantalla 2022-06-30 a la(s) 09.06.02.png" alt="">  
-                <img class="gallery"src="Media/Captura de Pantalla 2022-06-30 a la(s) 09.12.20.png" alt="">
-                <img class="gallery"src="Media/Captura de Pantalla 2022-07-08 a la(s) 18.17.51.png" alt="">
-                <img class="gallery"src="Media/Captura de Pantalla 2022-07-08 a la(s) 18.49.33.png" alt="">
-            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Media/Captura de Pantalla 2022-06-30 a la(s) 09.06.02.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Media/Captura de Pantalla 2022-06-30 a la(s) 09.12.20.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Media/Captura de Pantalla 2022-07-08 a la(s) 18.17.51.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Media/Captura de Pantalla 2022-07-08 a la(s) 18.49.33.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
-            <br>
         <aside class="aside">
             <article>
                 <form action="" method="GET" enctype="multipart/form-data"  ></form>
@@ -69,5 +113,6 @@
             <a href="https://www.instagram.com/mv.studio__/" target="_blank"><img id="instagram" src="Media/Instagram.png.webp" alt=""></a>
         </footer>  
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
