@@ -1,0 +1,448 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  text-decoration: solid;
+}
+a:visited {
+  color: black;
+}
+
+h1 {
+  display: inline;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+h5{
+  text-align: center;
+  text-decoration: solid;
+}
+
+p {
+  text-align: center;
+}
+
+legend {
+  text-align: center;
+  text-decoration: solid;
+  font-size: larger;
+}
+article {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+}
+img {
+  display: inline-block;
+  justify-content: center;
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  color: black;
+  text-decoration: solid;
+  text-align: center;
+}
+input:hover {
+  box-shadow: 2px 2px 2px pink;
+}
+
+.fondo {
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);
+}
+
+.photoCenterUno {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photoCenterDos {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photoCenterTres {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photoCenterCuatro {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-body{
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);
+}
+
+#carouselExampleIndicators {
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+#carouselSlide {
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel-indicators {
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorTitulo {
+  color: black;
+  font-style: normal;
+  text-shadow: 2px 2px 2px white;
+}
+
+#estudioImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  grid-area: footer;
+  justify-content: center;
+  margin: 5px;
+}
+
+.carousel {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+  width: 100%;
+}
+
+aside {
+  grid-area: aside;
+}
+
+@media screen and (min-width: 960px) {
+  a {
+    font-size: 30px;
+  }
+  .header > img {
+    width: 230px;
+    height: 230px;
+    display: inline;
+    text-align: unset;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 22px;
+    
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+  li {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  label {
+    color: black;
+    font-size: 30px;
+    text-decoration: solid;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+  }
+  input {
+    color: black;
+    font-size: 30px;
+    text-decoration: solid;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    opacity: 0.6;
+    border: 2px 2px 2px, solid, black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px white;
+    box-sizing: initial;
+    font-size: large;
+    align-items: center;
+  }
+  p {
+    font-size: 20px;
+    padding: 1%;
+  }
+
+  textarea {
+    opacity: 0.6;
+    border: 2px 2px 2px, solid, black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px white;
+    box-sizing: initial;
+    font-size: large;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+  }
+
+  .videoPlayer {
+    height: 400px;
+  }
+  .photoCenterUno {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .gallery {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+  .photoCenterDos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .photoCenterTres {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .photoCenterCuatro {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .galleryM {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  #instagram {
+    width: 100px;
+    height: 100px;
+  }
+  .tips {
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "section section";
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #estudioImage {
+    width: 50%;
+  }
+  #map {
+    width: 50%;
+  }
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 959px) {
+  .header > img {
+    width: 90px;
+    height: 90px;
+    justify-content: start;
+    margin-left: 0%;
+  }
+  a {
+    font-size: 20px;
+  }
+  h1 {
+    justify-content: center;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+    text-align: center;
+    
+  }
+  h4{
+    font-size: 17px;
+    text-align: center;
+    text-decoration: underline;
+  }
+ 
+  ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0%;
+  }
+  li {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0%;
+  }
+
+  label {
+    font-size: 10px;
+    text-shadow: 2px 2px 2px white;
+  }
+  input {
+    font-size: 10px;
+    text-shadow: 2px 2px 2px white;
+    opacity: 0.6;
+    border: 2px 2px 2px, solid, black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px white;
+    box-sizing: initial;
+    font-size: large;
+    align-items: center;
+  }
+  p {
+    column-count: 1;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  textarea {
+    opacity: 0.6;
+    border: 2px 2px 2px, solid, black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px white;
+    box-sizing: initial;
+    font-size: large;
+    align-items: center;
+  }
+ 
+  .videoPlayer {
+    height: 270px;
+  }
+  .photoCenterUno {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .gallery {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .galleryM {
+    width: 100px;
+    height: 100px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .photoCenterDos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .photoCenterTres {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 150px;
+  }
+  .photoCenterCuatro {
+    width: 200px;
+    height: 200px;
+  }
+  #instagram {
+    width: 50px;
+    height: 50px;
+  }
+  #formulario {
+    justify-content: center;
+    align-items: center;
+    size-adjust: 50%;
+  }
+  #estudioImage {
+    width: 250px;
+    height: 250px;
+  }
+  #map {
+    width: 250px;
+    height: 250px;
+  }
+  .carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

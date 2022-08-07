@@ -7,13 +7,13 @@
         <title>M V Studio | Content Creator</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="../Css/Styles.css">
+        <link rel="stylesheet" href="../Css/Style.css">
     </head>
 <body class="fondo"></body>
 <div id="main">
        <nav class="navbar bg-light">
         <div class="container-fluid"> 
-            <a class="navbar-brand" href="index.html"><img src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
+            <a class="navbar-brand" href="../index.html"><img src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,59 +44,81 @@
                 </li>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </div>
       </nav>
     <section>
     <h2>Servicios</H2>
-    <h3>Fotografia</h3>
-        <ol>
-            <li>Fotografia LifeStyle</li>
-            <p>Es un género fotográfico que consiste en retratar la vida cotidiana. Se trata de captar momentos de la vida de la gente de un modo aparentemente natural y cercano. Este estilo está cogiendo mucha fuerza este 2022, y surge como contrapunto a una fotografía más clásica, con poses forzadas y artificios.</p>
-            <li>Fotografia Gastronomica</li>
-            <p>La fotografía gastronómica es la fotografía de alimentos que produce imágenes atractivas y sugerentes que invitan a consumir dichos alimentos. Se trata de una fotografía de producto, centrada en la alimentación, pues la idea es utilizarla en publicidad, envases, cartas de restauración o incluso libros de cocina.</p>
-            <li>Fotografia Marcas de Moda</li>
-            <li>Fotografia Locales Comerciales</li>
-            <li>Fotografia para Redes Sociales</li>
-            <p>Las redes sociales son el puente comunicador entre el emprendedor y el potencial cliente y por eso su estructura debe ser firme, para asegurar que ese vínculo sea lo más duradero posible y se afiance con el paso del tiempo a medida que el emprendimiento evolucione y tenga una imagen de marca fuerte.
-            La fotografía es una herramienta fundamental en este proceso, la imagen es tan importante como la forma de comunicar y le da vida al proyecto, lo posiciona y lo define. No causa la misma impresión un perfil con fotos profesionales e iluminadas correctamente que uno con fotos con poca definición y oscuras. Todo entra por los ojos en el mundo del marketing digital.</p>
-            <li>Retratos</li>
-            <p>Es hora de mostrarle al mundo tu mejor perfil. Una imagen cuidada, transmite confianza. Una imagen que además refleja tu personalidad y valores, conecta con tus potenciales clientes.
-            El retrato corporativo enseña el lado más humano de tu negocio o marca personal y te ayuda a acercarte todavía más a tus clientes.</p>
-        </ol>
-    <h3>Videos</h3>
-         <ol>
-             <li>Eventos</li>
-             <li>Para Marcas</li>
-             <li>Locales Gastronomicos</li>
-             <li>Locales Comerciales</li>
-         </ol>
-    <h3>Agencias</h3>
-         <ol>
-            <li>Pre-Produccion</li>
-            <p>Una vez definida la idea, organizamos los recursos necesarios y planificamos cómo vamos a llevar a cabo la sesión.
-                En caso de que el cliente lo necesite, contamos con:
-                Estilistas de alimentos;
-                Estilistas de moda;
-                Maquillaje;
-                Peinado;
-                Utilería;
-                Equipo;
-                Locaciones;
-                entre otros proveedores que nos ayudan a alcanzar la calidad y el detalle que cada cliente necesita.</p>
-            <li>Shotting</li>
-            <p>En caso de sumarnos en esta etapa es importante que la pre-producción (los recursos y la planificación) ya estén listos.
-            Además del fotógrafo y el equipo técnico (maquilladores, estilistas o los profesionales que se haya definido contratar para la sesión), es importante que estén presentes: el director de arte de la agencia y/o un representante de la marca/cliente.
-            Podemos hacer la post-producción del material o entregarte los crudos para que el retoque sea realizado por la agencia.
-            </p>
-            <li>Post-Produccion</li>
-            <p>En esta etapa podemos realizar un retoque total o parcial del material (hecho por nosotros mismos, en la etapa anterior, o por la agencia).</p>
-         </ol>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+              <h3>Fotografia</h3>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><ol>
+              <li>Fotografia LifeStyle</li>
+              <p>Es un género fotográfico que consiste en retratar la vida cotidiana. Se trata de captar momentos de la vida de la gente de un modo aparentemente natural y cercano. Este estilo está cogiendo mucha fuerza este 2022, y surge como contrapunto a una fotografía más clásica, con poses forzadas y artificios.</p>
+              <li>Fotografia Gastronomica</li>
+              <p>La fotografía gastronómica es la fotografía de alimentos que produce imágenes atractivas y sugerentes que invitan a consumir dichos alimentos. Se trata de una fotografía de producto, centrada en la alimentación, pues la idea es utilizarla en publicidad, envases, cartas de restauración o incluso libros de cocina.</p>
+              <li>Fotografia Marcas de Moda</li>
+              <li>Fotografia Locales Comerciales</li>
+              <li>Fotografia para Redes Sociales</li>
+              <p>Las redes sociales son el puente comunicador entre el emprendedor y el potencial cliente y por eso su estructura debe ser firme, para asegurar que ese vínculo sea lo más duradero posible y se afiance con el paso del tiempo a medida que el emprendimiento evolucione y tenga una imagen de marca fuerte.
+              La fotografía es una herramienta fundamental en este proceso, la imagen es tan importante como la forma de comunicar y le da vida al proyecto, lo posiciona y lo define. No causa la misma impresión un perfil con fotos profesionales e iluminadas correctamente que uno con fotos con poca definición y oscuras. Todo entra por los ojos en el mundo del marketing digital.</p>
+              <li>Retratos</li>
+              <p>Es hora de mostrarle al mundo tu mejor perfil. Una imagen cuidada, transmite confianza. Una imagen que además refleja tu personalidad y valores, conecta con tus potenciales clientes.
+              El retrato corporativo enseña el lado más humano de tu negocio o marca personal y te ayuda a acercarte todavía más a tus clientes.</p>
+          </ol></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             <h3>Videos</h3> 
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><ol>
+              <li>Eventos</li>
+              <li>Para Marcas</li>
+              <li>Locales Gastronomicos</li>
+              <li>Locales Comerciales</li>
+          </ol></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             <h3>Agencias</h3> 
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><ol>
+              <li>Pre-Produccion</li>
+              <p>Una vez definida la idea, organizamos los recursos necesarios y planificamos cómo vamos a llevar a cabo la sesión.
+                  En caso de que el cliente lo necesite, contamos con:
+                  Estilistas de alimentos;
+                  Estilistas de moda;
+                  Maquillaje;
+                  Peinado;
+                  Utilería;
+                  Equipo;
+                  Locaciones;
+                  entre otros proveedores que nos ayudan a alcanzar la calidad y el detalle que cada cliente necesita.</p>
+              <li>Shotting</li>
+              <p>En caso de sumarnos en esta etapa es importante que la pre-producción (los recursos y la planificación) ya estén listos.
+              Además del fotógrafo y el equipo técnico (maquilladores, estilistas o los profesionales que se haya definido contratar para la sesión), es importante que estén presentes: el director de arte de la agencia y/o un representante de la marca/cliente.
+              Podemos hacer la post-producción del material o entregarte los crudos para que el retoque sea realizado por la agencia.
+              </p>
+              <li>Post-Produccion</li>
+              <p>En esta etapa podemos realizar un retoque total o parcial del material (hecho por nosotros mismos, en la etapa anterior, o por la agencia).</p>
+           </ol></div>
+          </div>
+        </div>
+      </div>
     </section>
     <aside class="aside">
         <article>
