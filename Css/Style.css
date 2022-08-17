@@ -141,6 +141,24 @@ aside {
   grid-area: aside;
 }
 
+.colorServicios1 {
+  border-width: 10px;
+  border-style: double;
+  border-color: pink;
+}
+
+.colorServicios2 {
+  border-width: 10px;
+  border-style: double;
+  border-color: violet;
+}
+
+.colorServicios3 {
+  border-width: 10px;
+  border-style: double;
+  border-color: purple;
+}
+
 @media screen and (min-width: 960px) {
   a {
     font-size: 30px;

@@ -118,6 +118,28 @@ section {
 aside {
 	grid-area: aside;
 }
+
+@mixin bordeColor($tipo, $ancho, $color) {
+	border-width: $ancho;
+	border-style: $tipo;
+	border-color: $color;
+}
+
+@if $rellenoServicios == "si"{
+	@for $i from 1 through 3 {
+		.colorServicios#{$i}{
+			background-color: map-get($mapaColoresServicios, $i );
+		}
+	}
+}
+@else if $rellenoServicios == "no"{
+	@each $numero, $color in $mapaColoresServicios{
+		.colorServicios#{$numero}{
+			@include bordeColor(double, 10px , $color);
+		}
+	}
+}
+
 @media screen and (min-width: 960px) {
 	a {
 		font-size: 30px;
@@ -301,6 +323,7 @@ aside {
 		font-size: 10px;
 		text-shadow: 2px 2px 2px $color_3;
 	}
+
 	input {
 		font-size: 10px;
 		text-shadow: 2px 2px 2px $color_3;
@@ -378,4 +401,5 @@ aside {
 		width: 80%;
 		margin: 0 auto;
 	}
+	
 }
