@@ -17,7 +17,7 @@
   <header class="header">
        <nav class="navbar bg-light">
         <div class="container-fluid"> 
-          <a class="navbar-brand" href="../index.html"><img src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
+          <a class="navbar-brand" href="../index.html"><img class="animate__animated animate__rotateIn" src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -122,13 +122,14 @@
         <form action="" method="GET" enctype="multipart/form-data"  ></form>
         <fieldset>
         <legend>¿Queres ser el ser el Primero en enterarte de todas Nuestras propuestas y novedades?</legend>
-        <label for="Nombre"></label>
-        <input type="text" placeholder="Nombre" name="Nombre">
-        <label for="Apellido"></label>
-        <input type="text" placeholder="Apellido" name="Apellido" required>
-        <label for="Email"> </label>
-        <input type="text" placeholder= "E-mail"name="Email">
-        <br>
+        <div class="datos">
+          <label for="Nombre"></label>
+          <input type="text" placeholder="Nombre" name="Nombre">
+          <label for="Apellido"></label>
+          <input type="text" placeholder="Apellido" name="Apellido" required>
+          <label for="Email"> </label>
+          <input type="text" placeholder= "E-mail"name="Email">
+        </div>
         <input type="submit" value="Enviar">
         </fieldset>
     </article>

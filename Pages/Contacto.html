@@ -17,7 +17,7 @@
     <header class="header">
     <nav class="navbar bg-light">
         <div class="container-fluid"> 
-            <a class="navbar-brand" href="../index.html"><img src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
+            <a class="navbar-brand" href="../index.html"><img class="animate__animated animate__rotateIn" src="../Media/LOGO.png" width="100px"></a><h1  class="animate__animated animate__fadeInDown">M V Studio | Content Creator</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,30 +55,38 @@
     </header> 
     <section class="section" >
         <h2 id="colorTitulo">Contacto</H2>
+          <img class="contact" src="../Media/Captura de Pantalla 2022-08-19 a la(s) 22.44.25.png" alt="contacto">
         <article>
-            <form action="" method="GET" enctype="multipart/form-data">
-                <fieldset>
-                    <label for="Nombre"></label>
-                    <input type="text" placeholder="Tu Nombre" name="Nombre">
-                    <label for="Apellido"></label>
-                    <input type="text" placeholder="Tu Apellido" name="Apellido" required>
-                    <br>
-                    <label for="Email"></label>
-                    <input type="text" placeholder="Tu ¨E-Mail" name="Email">
-                    <label for="Telefono"></label>
-                    <input type="text" placeholder="Telefono" name="Telefono">
-                    <br>
-                    <label for="Comentarios"> Comentarios</label><br/>
-                    <textarea type="text" name="Comentarios"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </fieldset>
-            </form>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </div>
         </article>
         <H2 id="colorTitulo">Donde Estamos</H2>
         <article>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7325382133895!2d-58.372066800000006!3d-34.6109242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4c9fe2fe9%3A0x5b480eb98a198ba0!2sDefensa%20275%2C%20C1065AAC%20CABA!5e0!3m2!1ses!2sar!4v1656524545366!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <br>
+            <h2>+Info</h2>
+            <a href="https://wa.me/41111111?text=¡Me+gustaria+saber+de+sus+servicios" class="whatsapp" target="_blank"><img class="whatsapp" src="../Media/9HKrmqj.png" alt=""> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+              <div>
+                <p>
+                <span>Tambien podes consultarnos tus dudas a traves de estos medios</span>
+                </p>
+              </div>
             <P>Telefono: 4111-1111</P>
             <P>Mail: info@mv-studio.com.ar</P>
         </article>

@@ -77,10 +77,7 @@ input:hover {
   background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);
 }
 
-.photoCenterUno,
-.photoCenterDos,
-.photoCenterTres,
-.photoCenterCuatro {
+.photoCenterUno {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -95,8 +92,6 @@ input:hover {
 #carouselExampleIndicators,
 #carouselSlide,
 #carousel-indicators {
-  width: 600px;
-  height: 600px;
   align-items: center;
   justify-content: center;
 }
@@ -123,9 +118,12 @@ footer {
 }
 
 .carousel {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 auto;
+  justify-content: center;
 }
 
 nav {
@@ -157,6 +155,24 @@ aside {
   border-width: 10px;
   border-style: double;
   border-color: purple;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
 }
 
 @media screen and (min-width: 960px) {
@@ -248,18 +264,6 @@ aside {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .photoCenterDos {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  .photoCenterTres {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  .photoCenterCuatro {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
   .galleryM {
     width: 200px;
     height: 200px;
@@ -298,6 +302,19 @@ aside {
     justify-content: center;
     margin-left: 80px;
   }
+  .contactInfo {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .form-control {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .contact {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 959px) {
   .header > img {
@@ -311,7 +328,7 @@ aside {
   }
   h1 {
     justify-content: center;
-    font-size: 15px;
+    font-size: 20px;
   }
   h2 {
     font-size: 20px;
@@ -358,7 +375,9 @@ aside {
     -moz-column-count: 1;
          column-count: 1;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   textarea {
     opacity: 0.6;
@@ -388,19 +407,6 @@ aside {
     -o-object-fit: contain;
     object-fit: contain;
   }
-  .photoCenterDos {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .photoCenterTres {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-rows: 150px;
-  }
-  .photoCenterCuatro {
-    width: 200px;
-    height: 200px;
-  }
   #instagram {
     width: 50px;
     height: 50px;
@@ -421,5 +427,44 @@ aside {
   .carousel {
     width: 80%;
     margin: 0 auto;
+  }
+  .accordion-body {
+    padding: 0%;
+  }
+  .form-control {
+    width: 90%;
+  }
+  .datos {
+    padding: 2px;
+  }
+  .datos > input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 20%;
+  }
+  .contact {
+    width: 95%;
+    margin-left: 5%;
+  }
+  .whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+    z-index: 50;
+  }
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=Style.css.map */
