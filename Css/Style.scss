@@ -4,9 +4,18 @@
 * {
 	margin: 5px;
 	padding: 5px;
+	outline: 0;
 	box-sizing: border-box;
 	font-family: $font-family_1;
 }
+*::before, *::after{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+
 a {
 	text-decoration: none;
 	text-decoration: solid;
@@ -41,6 +50,8 @@ article {
 img {
 	display: inline-block;
 	justify-content: center;
+	object-fit: contain;
+	
 }
 ol {
 	display: flex;
@@ -60,9 +71,24 @@ input {
 	background-color: $background-color_1;
 	background-image: linear-gradient(180deg, #ffffff 15%, #ffe5ff 34%, #FFDEE9 66%, #ffb5f9 100%);
 }
+.fondoDos {
+	background-color: $background-color_2;
+	background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 50%, #ffffff 100%);
+}
+.fondoTres{
+	background-color: $background-color_3;
+	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
+}
+.fondoCuatro{
+	background-color: $background-color_4;
+	background-image: linear-gradient(0deg, #FBAB7E 0%, #F7CE68 50%, #ffffff 100%);
+
+}
+
 .photoCenterUno {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -114,6 +140,196 @@ section {
 }
 aside {
 	grid-area: aside;
+}
+
+#tarjetas{
+	justify-content: space-evenly;
+	gap: 1%;
+}
+
+
+.tarjeta{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+}
+.contenedor{
+	display: grid;
+	margin: auto;
+	justify-items: center;
+	align-items: center;
+}
+.tarjetaUno{
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px 30px;
+	border-radius: 2% ;
+	border: 1px solid white;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px 1px 5px 0px black;
+	text-align: center;
+	background: pink;
+}
+.tarjetaUno:hover{
+	height: 680px;
+	width: 350px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px black;
+}
+.tarjetaEncabezado img {
+	position: relative;
+	border-radius: 50%;
+	display: block;
+	height: 200px;
+	width: 200px;
+	border-top: 8px solid white;
+	border-bottom: 8px solid white;
+	object-fit: cover;
+	margin: 20px auto;
+	transition: all 0.3s ease;
+}
+
+.tarjetaEncabezado {
+	position: relative;
+}
+
+.tarjetaEncabezado:before, .tarjetaEncabezado::after {
+	content: '';
+	position: absolute;
+	opacity: .7;
+}
+.tarjetaEncabezado:after {
+	border-radius: 50% ;
+	z-index: 20;
+	background-color: violet;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	right: 25px;
+}  
+.tarjetaEncabezado:before {
+	width: 70px;
+	height: 70px;
+	bottom: 0;
+	left: -10px;
+	border-radius: 20px;
+	background-color: purple;
+	transform: rotate(120deg);
+}
+.tarjetaIconos{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 15px;
+	list-style: none;
+}
+.tarjetaIconos li {
+	border-radius: 50%;
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	margin: 0 5px;
+	line-height: 40px;
+	text-align: center;
+	transform: scale(0);
+	transition: all 0.5s ease;
+}
+.desplazar{
+	opacity: 0;
+	transition: all .5s ease;
+	transform: translateY(-45px);
+
+}
+.agrandar{
+	transform: scale(0);
+	opacity: 0;
+	transition: all .4s ease;
+}
+
+.tarjetaUno:hover .agrandar {
+	opacity: 1;
+	transform: scale(1);
+}
+.tarjetaUno:hover .desplazar {
+	transform: translateY(0px);
+	opacity: 1;
+}
+.tarjetaIconos li a {
+	color: purple;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background: pink;
+	display: block;
+	line-height: 40px;
+	transition: all 0.3s;
+}
+.tarjetaIconos li a:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 5px purple;
+}
+.tarjetaIconos li:nth-child(1) {
+	transition-delay: 0.2s;
+}
+.tarjetaIconos li:nth-child(2) {
+	transition-delay: 0.3s;
+}
+.tarjetaIconos li:nth-child(3) {
+	transition-delay: 0.4s;
+}
+.desplazar:nth-child(1) {
+	transition-delay: .1s;
+}
+.desplazar:nth-child(2) {
+	transition-delay: .2s;
+}
+.desplazar:nth-child(3) {
+	transition-delay: .4s;
+}
+.info-Personal:nth-child(1){
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	line-height: 25px;
+}
+.info-Personal:nth-child(3) {
+	margin: 15px 0;
+}
+.info-Personal {
+	color: white;
+}
+
+.tarjetaAcciones{
+	text-align: center;
+	margin-top: 25px;
+}
+.botones{
+	color: white;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 0 0 4px black;
+	padding: 8px 15px;
+	font-size: 16px;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, pink, purple);
+}
+
+.botones:hover {
+	cursor: pointer;
+	width: 100%;
+}
+
+.botones span {
+	margin-right: 5px;
+	font-size: 20px;
 }
 
 @mixin bordeColor($tipo, $ancho, $color) {
@@ -169,10 +385,10 @@ aside {
 		}
 	}
 	h1 {
-		font-size: 60px;
+		font-size: 70px;
 	}
 	h2 {
-		font-size: 50px;
+		font-size: 60px;
 	}
 	h3 {
 		font-size: 30px;
@@ -218,7 +434,7 @@ aside {
 		align-items: center;
 	}
 	p {
-		font-size: 20px;
+		font-size: 25px;
 		padding: 1%;
 	}
 	textarea {
@@ -233,22 +449,33 @@ aside {
 		height: 200px;
 	}
 	.videoPlayer {
-		height: 400px;
+		width: 90%;
+		height: 90%;
+		object-fit: contain;
 	}
 	.photoCenterUno {
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto auto auto;
 	}
 	.gallery {
-		width: 400px;
-		height: 400px;
-		object-fit: contain;
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+	}
+
+	.galleryC{
+		height: 500px;
 	}
 	
 	.galleryM {
 		width: 200px;
 		height: 200px;
 		object-fit: contain;
+	}
+	.photoTips{
+		width: 50%;
+		height: 50%;
+
 	}
 	#instagram {
 		width: 100px;
@@ -274,12 +501,15 @@ aside {
 	.card {
 		width: 100%;
 		margin: 0 auto;
+	
 	}
 	.col {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-left: 80px;
+		padding: 0%;
+		
 	}
 	.contactInfo{
 		margin: 0;
@@ -294,6 +524,12 @@ aside {
 		width: 90%;
 		margin-left: 5%;
 
+	}
+
+	.contenedor{
+		grid-template-columns: repeat(2, 1fr);
+		width: 940px;
+		gap: 15px;
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 959px) {
@@ -313,16 +549,17 @@ aside {
 		font-size: 20px;
 	}
 	h2 {
-		font-size: 20px;
+		font-size: 30px;
 	}
 	h3 {
 		font-size: 15px;
 		text-align: center;
+		justify-content: center;
 	}
 	h4 {
 		font-size: 17px;
 		text-align: center;
-		text-decoration: underline;
+		
 	}
 	ul {
 		display: grid;
@@ -357,7 +594,7 @@ aside {
 	p {
 		column-count: 1;
 		text-align:center;
-		font-size: 13px;
+		font-size: 15px;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
@@ -371,17 +608,25 @@ aside {
 		align-items: center;
 	}
 	.videoPlayer {
-		height: 280px;
+		width: 90%;
+		height: 97%;
+		object-fit: contain;
 	}
 	.photoCenterUno {
 		display: grid;
 		grid-template-columns: auto auto;
 	}
 	.gallery {
-		width: 100%;
-		height: 100%;
+		width: 90%;
+		height: 97%;
 		object-fit: cover;
 	}
+	.galleryC{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
 	.galleryM {
 		width: 90px;
 		height: 90px;
@@ -398,8 +643,8 @@ aside {
 		size-adjust: 50%;
 	}
 	#estudioImage {
-		width: 250px;
-		height: 250px;
+		width: 100%;
+		height: 100%;
 	}
 	#map {
 		width: 250px;
@@ -452,5 +697,15 @@ aside {
 		display: flex;
 		flex-direction: column;
 	}
+	.contenedor{
+		grid-template-columns: repeat(1, 0.5fr);
+		width: 340px;
+		gap: 15px;
+		
+
+	
+	}
+	
+
 }
 
