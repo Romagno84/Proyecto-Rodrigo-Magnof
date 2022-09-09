@@ -398,7 +398,9 @@ aside {
 		text-align: center;
 	}
 	h5 {
-		font-size: 22px;
+		font-size: 30px;
+		color: purple;
+		text-decoration: solid;
 	}
 	ul {
 		display: flex;
@@ -462,9 +464,22 @@ aside {
 		height: 90%;
 		object-fit: cover;
 	}
-
+	.galleryDos {
+		width: 20%;
+		height: 20%;
+		object-fit: cover;
+		justify-content: center;
+		align-items: center;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	
 	.galleryC{
-		height: 500px;
+		width: 100%;
+		height: 600px;
+		align-items: center;
+		justify-content: center;
+		object-fit: cover;
 	}
 	
 	.galleryM {
@@ -475,7 +490,6 @@ aside {
 	.photoTips{
 		width: 50%;
 		height: 50%;
-
 	}
 	#instagram {
 		width: 100px;
@@ -509,6 +523,7 @@ aside {
 		justify-content: center;
 		margin-left: 80px;
 		padding: 0%;
+		width: 42%;
 		
 	}
 	.contactInfo{
@@ -622,11 +637,17 @@ aside {
 		object-fit: cover;
 	}
 	.galleryC{
-		height: 100%;
+		height: 250px;
 		width: 100%;
 		object-fit: cover;
 	}
-
+	.galleryDos {
+		columns: 2;
+		width: 40%;
+		height: 40%;
+		justify-content: center;
+		align-items: center;
+	}
 	.galleryM {
 		width: 90px;
 		height: 90px;
@@ -672,11 +693,9 @@ aside {
 		}
 	}
 	.contact{
-		width: 95%;
-		margin-left: 5%;
-
+		width: 100%;
 	}
-	.whatsapp {
+	  .whatsapp {
 		position:fixed;
 		width:40px;
 		height:40px;
@@ -697,15 +716,12 @@ aside {
 		display: flex;
 		flex-direction: column;
 	}
-	.contenedor{
+	  .contenedor{
 		grid-template-columns: repeat(1, 0.5fr);
 		width: 340px;
 		gap: 15px;
-		
-
 	
 	}
 	
-
 }
 
